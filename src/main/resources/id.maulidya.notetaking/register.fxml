@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="15" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.maulidya.notetaking.Login.RegistrationManager" style="-fx-padding: 30; -fx-background-color: #f4f4f4; -fx-border-radius: 10; -fx-background-radius: 10;">
+    <Label text="Register" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    <TextField fx:id="fullNameField" promptText="Nama Lengkap" style="-fx-pref-width: 300px;"/>
+    <TextField fx:id="emailField" promptText="Email" style="-fx-pref-width: 300px;"/>
+    <PasswordField fx:id="passwordField" promptText="Kata Sandi" style="-fx-pref-width: 300px;"/>
+    <TextField fx:id="phoneNumberField" promptText="Nomor Telepon" style="-fx-pref-width: 300px;"/>
+    <Button text="Register" onAction="#onRegisterButtonClick" style="-fx-pref-width: 300px;"/>
+    <Button text="Sudah Punya Akun" onAction="#onShowLoginView" style="-fx-pref-width: 300px; -fx-background-color: #AAA79F; -fx-text-fill: white;"/>
+    <Label fx:id="statusLabel" style="-fx-text-fill: red;"/>
+</VBox>
